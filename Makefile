@@ -7,8 +7,8 @@ deploy-site:
 	@echo "Deployed the site"
 
 build-site:
-	antora generate playbook.yml
-	@echo "Built docs.reveriecms.com"
+	antora generate playbook.prod.yml
+	@echo "Built docs.reveriecms.com with prod playbook"
 
 add-cname:
 	mkdir -p build/site
