@@ -1,6 +1,6 @@
 #!/usr/bin/make -sf
 
-default: rm-site build-site
+default: build-site
 
 deploy-site:
 	git subtree push --prefix build/site origin gh-pages
