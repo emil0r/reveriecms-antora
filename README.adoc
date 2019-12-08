@@ -1,0 +1,58 @@
+= Antora
+
+This is the Antora playbook project (aka site build) for the reverie documentation site published at docs.reveriecms.com
+
+== Playbook
+
+The playbook, defined in a playbook file, configures the build for the site. The playbook specifies the content sources (repository and branches), site URL, UI bundle URL, global AsciiDoc attributes, and Asciidoctor extensions.
+
+There is currently one playbook file for this reposity called playbook.yml. For editing documentation locally create a new branch according to local/<username> and point the playbook.yml sources to the local repositories you wish to edit.
+
+== File watcher and LiveReload
+
+This repository contains a script that watches .adoc and antora.yml files in the author workspace (as defined by local-antora-playbook.yml) and triggers a new Antora build when it detects changes to those files. The script also starts a web server and can use LiveReload to reload the browser tab after the Antora build completes. To use the script, run the following.
+
+
+. Install dependencies.
+
+ $ npm i -g gulp-cli
+ $ npm i
+
+. If you're using Chrome, install the LiveReload https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en[chrome extension].
+Firefox has built-in support for LiveReload.
+. Start the build.
++
+--
+ $ LIVERELOAD=true gulp
+
+The build first generates the site using Antora, analgous to the `antora local-antora-playbook.yml` command.
+It then serves the files in the output directory using a local web server.
+
+The web server's host URL is printed to the console after the `watch` task completes.
+
+....
+[17:43:27] Starting server...
+[17:43:27] Documentation Site Preview started http://localhost:5000
+[17:43:27] LiveReload started on port 35729
+[17:43:27] Running server
+....
+
+TIP: To skip the initial build, use `gulp serve` as the Gulp command.
+--
+
+. The console output will print status information every time a change is detected.
++
+....
+[17:33:59] Starting 'generate'...
+[17:34:02] Finished 'generate' after 3.35 s
+....
+
+. Make changes to your AsciiDoc files locally.
+The browser tab should automatically reload after a short while.
+. Use Ctrl+C to stop the process.
+
+
+== building
+....
+make
+....

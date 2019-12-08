@@ -1,0 +1,12 @@
+site:
+  title: reverie // documentation
+  url: https://docs.reveriecms.com
+  # not getting this to work. comment out for now as it's working as intended anyway
+  start_page: docs::index.adoc
+content:
+  sources:
+  - url: ../reveriecms-docs
+    branches: master
+ui:
+  bundle:
+    url: ../reveriecms-docs-ui/build/ui-bundle.zip
