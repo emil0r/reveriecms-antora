@@ -3,6 +3,8 @@ site:
   url: https://docs.reveriecms.com
   # not getting this to work. comment out for now as it's working as intended anyway
   start_page: docs::index.adoc
+  keys:
+    google_analytics: 'UA-44261433-3'
 content:
   sources:
   - url: ../reveriecms-docs
