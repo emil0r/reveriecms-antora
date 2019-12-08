@@ -10,3 +10,4 @@ content:
 ui:
   bundle:
     url: ../reveriecms-docs-ui/build/ui-bundle.zip
+  output_dir: static
