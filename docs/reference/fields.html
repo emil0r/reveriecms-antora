@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>fields :: reverie // documentation</title>
+    <link rel="canonical" href="https://docs.reveriecms.com/docs/reference/fields.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.reveriecms.com">reverie // documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="docs" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">docs</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Intro</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../structure.html">Structure of a project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">dev</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dev/reverie-dev.html">reverie-dev</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dev/migrations.html">migrations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dev/app.html">app</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dev/module.html">module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dev/object.html">object</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dev/page.html">page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepts/templates.html">Templates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepts/areas.html">Areas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepts/objects.html">Objects</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepts/apps.html">Apps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepts/modules.html">Modules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepts/endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../concepts/migrations.html">Migrations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="app.html">app</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="area.html">area</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="auth.html">auth</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="cache.html">cache</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="downstream.html">downstream</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="email.html">email</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="endpoint.html">endpoint</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="fields.html">fields</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="http-server.html">http/server</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="i18n.html">i18n</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="logger.html">logger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="migration.html">migration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="module.html">module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="object.html">object</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="page.html">page</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="renderer.html">renderer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="system.html">system</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">docs</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">docs</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">docs</a></li>
+    <li>Reference</li>
+    <li><a href="fields.html">fields</a></li>
+  </ul>
+</nav>
+Version 
+</div>
+<article class="doc">
+<h1 class="page">fields</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Both <a href="object.html" class="page">object</a> and <a href="module.html" class="page">module</a> take fields as arguments. A field always corresponds to a column in a database.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All fields are implemented through the multimethod row located in the <code>reverie.admin.looknfeel.form</code> namespace. Implementing new fields are possible by extending the multimethod. reverie&#8217;s filemanager does this.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_fields"><a class="anchor" href="#_the_fields"></a>The fields</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All fields have the following arguments in common:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>:name "This is what will show up in the admin interface"</p>
+</li>
+<li>
+<p>:initial "This is what reverie will initialize a new entry with in the database. Take care to avoid nil values if you have set NOT NULL in the database."</p>
+</li>
+<li>
+<p>:help "This text will show up as a help text in the admin interface."</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_html"><a class="anchor" href="#_html"></a>:html</h3>
+<div class="paragraph">
+<p>Custom HTML representation of a field.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :html
+    :html (fn [entity field data] "do something with this")}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_m2m"><a class="anchor" href="#_m2m"></a>:m2m</h3>
+<div class="paragraph">
+<p>Many to many. Bind to another table through a linking table.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :m2m
+
+    ;; optional casting, but is normally done as m2m is usually
+    ;; held together with foreign keys in the database
+    :cast :int
+
+    ;; table we want to have joined
+    :table :auth_group
+
+    ;; select options for hiccup
+    :options [:id :name]
+
+    ;; order by
+    :order :name
+
+    ;; the joining
+    :m2m {;; the joining table
+          :table :auth_user_group
+
+          ;; joining: this that
+          ;; this: this table's foreign key
+          ;; that: the joining table's foreign key
+          :joining [:user_id :group_id]}}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_richtext"><a class="anchor" href="#_richtext"></a>:richtext</h3>
+<div class="paragraph">
+<p>Richtext field. Uses tinyMCE.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :richtext
+    :inline? true}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_boolean"><a class="anchor" href="#_boolean"></a>:boolean</h3>
+<div class="paragraph">
+<p>True/false checkbox.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :boolean}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dropdown"><a class="anchor" href="#_dropdown"></a>:dropdown</h3>
+<div class="paragraph">
+<p>:options expects a hiccup vector. It takes optionally a function expecting a hiccup vector back.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">;; optionally a function can be used as :options
+
+(defn get-my-options [{:keys [database]}]
+  ;; do something with the database, or fetch the data from
+  ;; somewhere else
+
+  (let [query "SELECT id, name FROM test_table"
+        result (ez-database.core/query database query)
+        options-returned-as-hiccup-vector (map (juxt :id :name) result)]
+        options-returned-as-hiccup-vector))
+
+   {;; other stuff
+    :type :dropdown
+    :options ["option1"
+              "option2"]}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_email"><a class="anchor" href="#_email"></a>:email</h3>
+<div class="paragraph">
+<p>Input type in the HTML is set to type="email".</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :email}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_number"><a class="anchor" href="#_number"></a>:number</h3>
+<div class="paragraph">
+<p>Input type in the HTML is set to type="number". The input is cast to a number in Clojure.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :number}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_slug"><a class="anchor" href="#_slug"></a>:slug</h3>
+<div class="paragraph">
+<p>A slug field. Used for sanitizing another field which you wish to use as part of a URL.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :slug
+    :for :name-of-field-you-wish-to-slugify}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_textarea"><a class="anchor" href="#_textarea"></a>:textarea</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :textarea}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_datetime"><a class="anchor" href="#_datetime"></a>:datetime</h3>
+<div class="paragraph">
+<p>Allows for datetime picking with javascript. Converts to java.sql.Timestamp in the background.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :datetime}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_image"><a class="anchor" href="#_image"></a>:image</h3>
+<div class="paragraph">
+<p>Pick an image using the filemanager.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">   {;; other stuff
+    :type :image}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_anything_else"><a class="anchor" href="#_anything_else"></a>anything else</h3>
+<div class="paragraph">
+<p>There is a :default implementation for the multimethod in question. It spits out a text field with anything extra in there.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+        <img src="/_/img/reveriecms-logo-white.png">
+        <p><a href="http://reveriecms.com">reveriecms.com</a></p>
+        <p><a href="https://github.com/emil0r/reverie">GitHub</a></p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
