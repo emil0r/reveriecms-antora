@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Typical structure of a project :: reverie // documentation</title>
+    <link rel="canonical" href="https://docs.reveriecms.com/docs/structure.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.reveriecms.com">reverie // documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="docs" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">docs</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Intro</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="installation.html">Installation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="structure.html">Structure of a project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">dev</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dev/reverie-dev.html">reverie-dev</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dev/migrations.html">migrations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dev/app.html">app</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dev/module.html">module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dev/object.html">object</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dev/page.html">page</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Concepts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concepts/templates.html">Templates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concepts/areas.html">Areas</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concepts/objects.html">Objects</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concepts/apps.html">Apps</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concepts/modules.html">Modules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concepts/endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="concepts/migrations.html">Migrations</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/app.html">app</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/area.html">area</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/auth.html">auth</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/cache.html">cache</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/downstream.html">downstream</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/email.html">email</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/endpoint.html">endpoint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/fields.html">fields</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/http-server.html">http/server</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/i18n.html">i18n</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/logger.html">logger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/migration.html">migration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/module.html">module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/object.html">object</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/page.html">page</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/renderer.html">renderer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="reference/system.html">system</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">docs</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">docs</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">docs</a></li>
+    <li>Intro</li>
+    <li><a href="structure.html">Structure of a project</a></li>
+  </ul>
+</nav>
+Version 
+</div>
+<article class="doc">
+<h1 class="page">Typical structure of a project</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_directory_structure">directory structure</a></li>
+<li><a href="#_dev">dev/</a>
+<ul class="sectlevel2">
+<li><a href="#_devdev_clj">dev/dev.clj</a></li>
+</ul>
+</li>
+<li><a href="#_media">media/</a></li>
+<li><a href="#_resources">resources/</a>
+<ul class="sectlevel2">
+<li><a href="#_resourcespublic">resources/public/</a></li>
+</ul>
+</li>
+<li><a href="#_srcproject_name">src/&lt;project-name&gt;/</a>
+<ul class="sectlevel2">
+<li><a href="#_srcproject_namecore_clj">src/&lt;project-name&gt;/core.clj</a></li>
+<li><a href="#_srcproject_nameinit_clj">src/&lt;project-name&gt;/init.clj</a></li>
+<li><a href="#_srcproject_nameapps">src/&lt;project-name&gt;/apps</a></li>
+<li><a href="#_srcproject_nameendpoints">src/&lt;project-name&gt;/endpoints</a></li>
+<li><a href="#_srcproject_nameobjects">src/&lt;project-name&gt;/objects</a></li>
+<li><a href="#_srcproject_namemodules">src/&lt;project-name&gt;/modules</a></li>
+<li><a href="#_srcproject_nametemplates">src/&lt;project-name&gt;/templates</a></li>
+</ul>
+</li>
+<li><a href="#_project_clj">project.clj</a></li>
+<li><a href="#_settings_edn">settings.edn</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_directory_structure"><a class="anchor" href="#_directory_structure"></a>directory structure</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>dev/
+   dev.clj
+media/
+resources/
+   public/
+src/
+   &lt;project_name&gt;/
+      core.clj
+      init.clj
+      apps/
+      endpoints/
+      objects/
+      modules/
+      templates/
+project.clj
+settings.edn</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dev"><a class="anchor" href="#_dev"></a>dev/</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Under the dev directory all dev related things should be gathered. This is where you typically put files meant for REPL interaction.</p>
+</div>
+<div class="sect2">
+<h3 id="_devdev_clj"><a class="anchor" href="#_devdev_clj"></a>dev/dev.clj</h3>
+<div class="paragraph">
+<p>Generated by <code>lein new reverie &lt;project-name&gt;</code> dev.clj holds interactions for starting the server through the REPL, adding new objects, apps, raw pages, and modules.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_media"><a class="anchor" href="#_media"></a>media/</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Directory to hold all media files. This runs on the local filesystem.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_resources"><a class="anchor" href="#_resources"></a>resources/</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Directory to hold resources to be packaged into the JAR file for production. Queries, publically accessable resources, etc can go under here.</p>
+</div>
+<div class="sect2">
+<h3 id="_resourcespublic"><a class="anchor" href="#_resourcespublic"></a>resources/public/</h3>
+<div class="paragraph">
+<p>Directory to hold publically acessable resources available over HTTP GET. Typically a <code>resources/public/static/</code> directory is generated by <code>lein new reverie &lt;project-name&gt;</code> and is access as <code>/static/&lt;URI&gt;</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_srcproject_name"><a class="anchor" href="#_srcproject_name"></a>src/&lt;project-name&gt;/</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Directory that hold all source code meant for production.</p>
+</div>
+<div class="sect2">
+<h3 id="_srcproject_namecore_clj"><a class="anchor" href="#_srcproject_namecore_clj"></a>src/&lt;project-name&gt;/core.clj</h3>
+<div class="paragraph">
+<p>Main entry point for the program.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_srcproject_nameinit_clj"><a class="anchor" href="#_srcproject_nameinit_clj"></a>src/&lt;project-name&gt;/init.clj</h3>
+<div class="paragraph">
+<p>Main configuration/initilization of the project.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_srcproject_nameapps"><a class="anchor" href="#_srcproject_nameapps"></a>src/&lt;project-name&gt;/apps</h3>
+<div class="paragraph">
+<p>Directory to hold all apps.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_srcproject_nameendpoints"><a class="anchor" href="#_srcproject_nameendpoints"></a>src/&lt;project-name&gt;/endpoints</h3>
+<div class="paragraph">
+<p>Directory to hold all endpoints.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_srcproject_nameobjects"><a class="anchor" href="#_srcproject_nameobjects"></a>src/&lt;project-name&gt;/objects</h3>
+<div class="paragraph">
+<p>Directory to hold all objects.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_srcproject_namemodules"><a class="anchor" href="#_srcproject_namemodules"></a>src/&lt;project-name&gt;/modules</h3>
+<div class="paragraph">
+<p>Directory to hold all modules.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_srcproject_nametemplates"><a class="anchor" href="#_srcproject_nametemplates"></a>src/&lt;project-name&gt;/templates</h3>
+<div class="paragraph">
+<p>Directory to hold all templates.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project_clj"><a class="anchor" href="#_project_clj"></a>project.clj</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Generated project.clj for leiningen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_settings_edn"><a class="anchor" href="#_settings_edn"></a>settings.edn</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Settings file for reverie that holds all the configuration paramaters.</p>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+        <img src="/_/img/reveriecms-logo-white.png">
+        <p><a href="http://reveriecms.com">reveriecms.com</a></p>
+        <p><a href="https://github.com/emil0r/reverie">GitHub</a></p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
